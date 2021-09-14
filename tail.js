@@ -6,8 +6,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const tail = function(words){
-  for (var i = 0; i <= words.length; i++) {
+const tail = function(words) {
+  for (let i = 0; i <= words.length; i++) {
     return words[i];
   }
 };
