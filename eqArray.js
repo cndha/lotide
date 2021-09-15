@@ -19,4 +19,4 @@ const eqArrays = function(array1, array2){
 };
 
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); //>> PASS
+assertEqual(eqArrays([1, 2, 4], [1, 2, 3]), true); //>> PASS
