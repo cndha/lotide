@@ -18,11 +18,14 @@ const assertArraysEqual = function(arrayA, arrayB){
   }
 };
 
+// build a without function that takes in 2 arrays, first array is the source, second array denotes the words to remove
+
+
 const without = function(words, itemsToRemove) {
-  let store = []
-  for (let word of words){
-    if (!itemsToRemove.includes(word)) {
-      store.push(word);
+  let store = [] // empty array to push into 
+  for (let word of words){ //loop through source array 
+    if (!itemsToRemove.includes(word)) { //find what items of itemsToRemove is not contained in source array
+      store.push(word); //push into new array 
     }
   }
   return store;
