@@ -1,22 +1,5 @@
-// const eqArrays = function(array1, array2){
-//   if (array1.length !== array2.length){
-//     return false;
-//   } 
-//   for (let i = 0; i < array1.length; i++){
-//     if (array1[i] !== array2[i]){
-//       return false;
-//     }
-//   }
-//   return true;
-// };
-
-// const assertArraysEqual = function(arrayA, arrayB){
-//   if (eqArrays(arrayA, arrayB)) {
-//   console.log(`This is true`);
-//   } else {
-//   console.log('This is false');
-//   }
-// };
+const eqArrays = require('./eqArray');
+const assertArraysEqual = require('./assertArraysEqual');
 
 // arrays with 1 or 2 methods, return empty array
 // arrays.length odd numbers = single element returned
@@ -45,12 +28,4 @@ const middle = function (array){
   }
 };
 
-console.log(middle([1])); //return empty * WORKS
-console.log(middle([1, 2])); //return empty * WORKS
-console.log(middle([1, 2, 3, 4, 5])); // 3 * WORKS
-console.log(middle([1, 2, 3, 4, 5, 6, 7])); //4 * WORKS
-console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])); // 7 * WORKS
-
-console.log(middle([1, 2, 3, 4])); //2, 3
-console.log(middle([1, 2, 3, 4, 5, 6])); //3, 4  
-
+module.exports = middle;
